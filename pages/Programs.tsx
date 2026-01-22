@@ -1,8 +1,7 @@
-
 import React from 'react';
 import { Link } from 'react-router-dom';
 import { Dumbbell, HeartPulse, Zap, Target } from 'lucide-react';
-import { Program } from '../types';
+import { Program } from '../types.ts';
 
 const programs: Program[] = [
   {

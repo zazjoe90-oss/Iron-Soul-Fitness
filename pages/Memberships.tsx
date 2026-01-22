@@ -1,7 +1,6 @@
-
 import React from 'react';
 import { Check } from 'lucide-react';
-import { Plan } from '../types';
+import { Plan } from '../types.ts';
 
 const plans: Plan[] = [
   {

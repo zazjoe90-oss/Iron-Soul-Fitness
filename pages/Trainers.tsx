@@ -1,6 +1,5 @@
-
 import React from 'react';
-import { Trainer } from '../types';
+import { Trainer } from '../types.ts';
 import { Instagram, Twitter, Linkedin } from 'lucide-react';
 
 const trainers: Trainer[] = [
