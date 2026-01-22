@@ -12,9 +12,9 @@ import Contact from './pages/Contact.tsx';
 const App: React.FC = () => {
   return (
     <Router>
-      <div className="flex flex-col min-h-screen">
+      <div className="flex flex-col min-h-screen w-full">
         <Navbar />
-        <main className="flex-grow">
+        <main className="flex-grow w-full">
           <Routes>
             <Route path="/" element={<Home />} />
             <Route path="/programs" element={<Programs />} />
@@ -22,6 +22,8 @@ const App: React.FC = () => {
             <Route path="/trainers" element={<Trainers />} />
             <Route path="/schedule" element={<Schedule />} />
             <Route path="/contact" element={<Contact />} />
+            {/* Fallback for undefined routes */}
+            <Route path="*" element={<Home />} />
           </Routes>
         </main>
         <Footer />

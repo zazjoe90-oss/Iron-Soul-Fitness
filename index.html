@@ -7,6 +7,7 @@
     <meta name="description" content="Experience top-tier fitness at Iron & Soul. From personal training to HIIT and yoga, our expert coaches help you reach your goals. Join now for a free trial!" />
     <meta name="keywords" content="gym near me, fitness center, personal trainer, workout gym, cardio and weight training">
     
+    <!-- Tailwind JIT CDN is used for runtime styling in this specific environment -->
     <script src="https://cdn.tailwindcss.com"></script>
     <link href="https://fonts.googleapis.com/css2?family=Inter:wght@400;600;700;800&family=Oswald:wght@500;700&display=swap" rel="stylesheet">
     <style>
@@ -21,6 +22,12 @@
       html {
         scroll-behavior: smooth;
       }
+      /* Ensure root takes full height */
+      #root {
+        min-height: 100vh;
+        display: flex;
+        flex-direction: column;
+      }
     </style>
     <script type="importmap">
 {
@@ -28,8 +35,8 @@
     "react": "https://esm.sh/react@19.0.0",
     "react-dom": "https://esm.sh/react-dom@19.0.0",
     "react-dom/client": "https://esm.sh/react-dom@19.0.0/client",
-    "react-router-dom": "https://esm.sh/react-router-dom@7.1.5?deps=react@19.0.0,react-dom@19.0.0",
-    "lucide-react": "https://esm.sh/lucide-react@0.475.0?deps=react@19.0.0",
+    "react-router-dom": "https://esm.sh/react-router-dom@7.1.5?external=react,react-dom",
+    "lucide-react": "https://esm.sh/lucide-react@0.475.0?external=react",
     "react-dom/": "https://esm.sh/react-dom@^19.2.3/",
     "react/": "https://esm.sh/react@^19.2.3/"
   }
@@ -38,9 +45,9 @@
   </head>
   <body class="bg-zinc-950 text-zinc-100">
     <div id="root">
-      <div class="flex items-center justify-center min-h-screen">
-        <div class="text-lime-400 font-bold brand-font animate-pulse text-xl">
-          IRON <span class="text-white">&</span> SOUL LOADING...
+      <div class="flex items-center justify-center min-h-screen bg-zinc-950">
+        <div class="text-lime-400 font-bold brand-font animate-pulse text-xl tracking-tighter">
+          IRON <span class="text-white">&</span> SOUL <span class="ml-2 text-zinc-500 text-sm">INITIALIZING...</span>
         </div>
       </div>
     </div>
