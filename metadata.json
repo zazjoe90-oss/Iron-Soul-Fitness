@@ -1,0 +1,7 @@
+{
+  "name": "Iron & Soul Fitness",
+  "description": "A high-performance, SEO-optimized gym and fitness center website designed to convert visitors into members with professional training programs, expert coaching, and modern facilities.",
+  "requestFramePermissions": [
+    "geolocation"
+  ]
+}
