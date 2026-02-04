@@ -22,7 +22,6 @@ const App: React.FC = () => {
             <Route path="/trainers" element={<Trainers />} />
             <Route path="/schedule" element={<Schedule />} />
             <Route path="/contact" element={<Contact />} />
-            {/* Fallback for undefined routes */}
             <Route path="*" element={<Home />} />
           </Routes>
         </main>
